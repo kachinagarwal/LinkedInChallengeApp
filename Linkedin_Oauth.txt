@@ -1,0 +1,23 @@
+Company:
+
+Motorola Solutions
+
+Application Name:
+
+ChallengeApp
+
+API Key:
+
+77af9lggyatifz
+
+Secret Key:
+
+bjOWR3ZJ9x2dhG52
+
+OAuth User Token:
+
+866f1dd7-abb1-4224-ac92-4193167d3947
+
+OAuth User Secret:
+
+e2f55187-d454-4384-a96e-9392859364eb
