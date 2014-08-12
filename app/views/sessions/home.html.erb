@@ -1,0 +1,88 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<div class="container">
+	<div class="row well">
+        <div class="col-md-10">
+                <div class="panel">
+                    <% if session[:image] != nil %>
+                    <img class="pic img-circle" src="<%= session[:image] %>" alt="...">
+                    <% else %>
+                    <img class="pic img-circle" src="http://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/twDq00QDud4/s120-c/photo.jpg" alt="...">
+                    <% end %>
+                    <div class="name"><small><%= session[:user_id] %></small></div>
+                    
+                    <a href="/sessions/clear" class="btn btn-xs btn-primary pull-right" style="margin:10px;"><span class="glyphicon glyphicon-picture"></span>Signout</a>
+                </div>
+                
+    <br><br><br>
+    <ul class="nav nav-tabs" id="myTab">
+      <li class="active"><a href="#inbox" data-toggle="tab"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+    </ul>
+    
+    <div class="tab-content">
+      <div class="tab-pane active" id="inbox">
+        <a type="button" data-toggle="collapse" data-target="#a1">
+            <div class="btn-toolbar well well-sm" role="toolbar"  style="margin:0px;">
+              <div class="btn-group"><input type="checkbox"></div>
+              <div class="btn-group col-md-3">Admin</div>
+              <div class="btn-group col-md-8"><b>Sample Test Mail</b> <div class="pull-right"><i class="glyphicon glyphicon-time"></i> 12:10 PM <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-share-square-o"> Reply</i></button></div> </div>
+            </div>
+        </a>
+        <br>
+      </div>
+            
+    </div>
+
+     </div>
+	</div>
+    
+    
+</div>
+
+
+
+
+<style>
+	.pic
+{
+     margin-top:50px; 
+     width:120px;
+     margin-left:50px;
+     margin-bottom:-60px;
+}
+
+.panel
+{
+    background-image:url("http://autoimagesize.com/wp-content/uploads/2014/01/rainbow-aurora-background-wallpaper-colour-images-rainbow-background.jpg"); 
+}
+
+.name
+{
+    position:absolute;
+    padding-left:200px;
+    font-size:30px;
+}
+
+.dropdown
+{
+    position:absolute;
+}
+
+.change
+{
+ position:relative; 
+ bottom:20px;
+ padding:1px;
+ color:white;
+ text-decoration:none;
+}
+
+
+.change:hover
+{
+ text-decoration:none;
+ background-color:black;
+ color:white;
+}
+</style>
